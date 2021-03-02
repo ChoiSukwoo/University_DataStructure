@@ -2,25 +2,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-	ListNode* LinkList::insertFirst(ListNode* head, int value) {
-		ListNode* p = (ListNode*)malloc(sizeof(ListNode));
-		p->data = value;
+	DataNodeType* LinkList::insertFirst(DataNodeType* head, int value) {
+		DataNodeType* p = (DataNodeType*)malloc(sizeof(DataNodeType));
+		p->dataBox = value;
 		p->link = head;
 		head = p;
 		return head;
 	}
 
-	ListNode* LinkList::insertNode(ListNode* head, ListNode* pre, int value) {
-		ListNode* p = (ListNode*)malloc(sizeof(ListNode));
-		p->data = value;
+	DataNodeType* LinkList::insertNode(DataNodeType* head, DataNodeType* pre, int value) {
+		DataNodeType* p = (DataNodeType*)malloc(sizeof(DataNodeType));
+		p->dataBox = value;
 		p->link = pre->link;
 		pre->link = p;
 		return head;
 	}
 
-	ListNode* LinkList::deleteFirst(ListNode* head) {
+	DataNodeType* LinkList::deleteFirst(DataNodeType* head) {
 
-		ListNode* remove;
+		DataNodeType* remove;
 		if (head == NULL) {
 			return NULL;
 		}
@@ -30,9 +30,9 @@
 		return head;
 	}
 
-	ListNode* LinkList::deleteNode(ListNode* head, ListNode* pre) {
+	DataNodeType* LinkList::deleteNode(DataNodeType* head, DataNodeType* pre) {
 
-		ListNode* remove;
+		DataNodeType* remove;
 		remove = pre->link;
 		pre->link = remove->link;
 		free(remove);
@@ -40,19 +40,21 @@
 	}
 
 
-	void LinkList::printList(ListNode* head) {
-		for (ListNode* p = head; p != NULL; p = p->link) {
-			printf("%d-> ", p->data);
+	void LinkList::printList(DataNodeType* head) {
+		if (head != NULL) {
+			DataNodeType* p = head;
+			for (p; p->link != NULL; p = p->link) {
+				printf("%d-> ", p->dataBox);
+			}
+			printf("%d \n\n", p->dataBox);
 		}
-		printf("\n");
-
 	}
 
 	void LinkList::Run() {
 
 		printf("\n\n-----------------LinkList----------------\n\n");
 
-		ListNode* head = NULL;
+		DataNodeType* head = NULL;
 		for (int i = 0; i < 5; i++)
 		{
 			head = insertFirst(head, i);

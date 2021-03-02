@@ -33,6 +33,15 @@
     <ClCompile Include="week12.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="circleListNode.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\woo9807\Desktop\cir_list_modi1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="circleListModel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="list.h">
@@ -48,6 +57,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="week12.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="circleList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="circleListModel.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

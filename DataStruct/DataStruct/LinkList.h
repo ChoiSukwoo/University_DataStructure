@@ -2,19 +2,19 @@
 #ifndef LINKLIST_H
 #define LINKLIST_H
 
-typedef struct listNode {
-	int data;
-	struct listNode* link;
-}ListNode;
+typedef struct DataNodeType {
+	int dataBox;
+	struct DataNodeType* link;
+}DataNodeType;
 
 class LinkList {
 public:
 
-	ListNode* insertFirst(ListNode* head, int value);
-	ListNode* insertNode(ListNode* head, ListNode* pre, int value);
-	ListNode* deleteFirst(ListNode* head);
-	ListNode* deleteNode(ListNode* head, ListNode* pre);
-	void printList(ListNode* head);
+	DataNodeType* insertFirst(DataNodeType* head, int value);
+	DataNodeType* insertNode(DataNodeType* head, DataNodeType* pre, int value);
+	DataNodeType* deleteFirst(DataNodeType* head);
+	DataNodeType* deleteNode(DataNodeType* head, DataNodeType* pre);
+	void printList(DataNodeType* head);
 
 	void Run();
 };

@@ -3,6 +3,7 @@
 #include "deck.h"
 #include "CircleQue.h"
 #include "week12.h"
+#include "circleList.h"
 #include <stdio.h>
 
 
@@ -21,6 +22,6 @@ void main() {
 	//CircleQue CircleQueObj;
 	//CircleQueObj.Run();
 
-	LinkList2 linkListObj2;
-	linkListObj2.Run();
+	circleList circleList;
+	circleList.Run();
 }

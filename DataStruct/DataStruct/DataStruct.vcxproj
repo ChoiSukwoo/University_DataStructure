@@ -139,6 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="C:\Users\woo9807\Desktop\cir_list_modi1.c" />
+    <ClCompile Include="circleListModel.cpp" />
+    <ClCompile Include="circleListNode.cpp" />
     <ClCompile Include="CircleQue.cpp" />
     <ClCompile Include="deck.cpp" />
     <ClCompile Include="LinkList.cpp" />
@@ -147,6 +150,8 @@
     <ClCompile Include="week12.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="circleList.h" />
+    <ClInclude Include="circleListModel.h" />
     <ClInclude Include="CircleQue.h" />
     <ClInclude Include="deck.h" />
     <ClInclude Include="LinkList.h" />
